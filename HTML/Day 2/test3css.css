@@ -1,0 +1,75 @@
+*{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    /* background-color:lavender; */
+}
+header,main,aside,footer{
+    border-color: darkblue;
+    
+    /* background-color:lavender; */
+}
+header {
+    height: 100px;
+    display: flex;   /* row wise with no wrap */
+    flex-wrap: nowrap;
+    margin: 5px;
+    border-style:groove;
+    background-color: aliceblue;
+}
+header h1{
+    line-height: 100px;
+    text-align: center;
+}
+nav{
+    display: flex;
+    direction: row;
+}
+a {
+    line-height: 100px;
+    text-align: center;
+    text-decoration: none;
+}
+main{
+    margin: 5px;
+    display: flex;
+    flex: auto;
+    height: max-content;
+    /* border-style:groove; */
+    /* this will push the footer and accomodates more content */
+}
+section{
+    /* background-image: url("../Day 1/Images/minion_background.jpg");
+    background-size: cover; */
+
+    text-align: center;
+    height: fit-content;
+    border-style:groove;
+    margin: 5px;
+    border-color: darkblue;
+}
+aside{
+    border-style:groove;
+    margin: 5px;
+}
+#as-left{
+    width: 25%;
+    height: fit-content;
+}
+#as-right{
+    text-align: center;
+    width: 25%;
+    height: fit-content;
+}
+footer{
+    text-align: center;
+    background-color: darkgray;
+    margin: 5px;
+    height: 100px;
+    border-style:groove;
+}

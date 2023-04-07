@@ -1,0 +1,11 @@
+
+h3{color:blue;background-color: pink;font-size:16px;font-family:cursive;}
+p{color:white;background-color: purple; font-family:cursive;}
+.mytable{background-color:purple; width:300px; height=300px; border: 3px solid yellow; padding:10px}
+#td1{color:white; font-family:cursive; padding: 10px;}
+#th1{color:white; font-family:cursive; font-size:20px;font-style:bold; padding:10px;}
+#td2{color:red; font-family:cursive; padding:5px; padding-bottom:5px;}
+
+
+.mytable1{background-color:lightyellow; width:600px; height:500px; border: 3px solid yellow; padding:10px}
+#th2{font-size:20px; font-family:cursive;}

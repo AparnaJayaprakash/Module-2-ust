@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+        }
+
+        input {
+    margin: 0.4rem;
+        }
+
+        figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+        }
+
+        img {
+    max-width: 220px;
+    max-height: 150px;
+        }
+
+        figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+del,
+ins {
+    display: block;
+    text-decoration: none;
+    position: relative;
+}
+
+del {
+    background-color: #fbb;
+}
+
+ins {
+    background-color: #d4fcbc;
+}
+
+del::before,
+ins::before {
+    position: absolute;
+    left: 0.5rem;
+    font-family: monospace;
+}
+
+del::before {
+    content: '−';
+}
+
+ins::before {
+    content: '+';
+}
+
+p {
+    margin: 0 1.8rem 0;
+    font-family: Georgia, serif;
+    font-size: 1rem;
+}
+
+kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+    color: #333;
+    display: inline-block;
+    font-size: 0.85em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+}
+label {
+    padding-right: 10px;
+    font-size: 1rem;
+}
+label {
+    font-family: 'Fira Sans', sans-serif;
+}
+label {
+    padding-right: 10px;
+    font-size: 1rem;
+}
+time,var {
+    font-weight: bold;
+}
+#example-paragraphs {
+    background-color: white;
+    overflow: hidden;
+    resize: horizontal;
+    width: 9rem;
+    border: 2px dashed #999;
+}
+.batman {
+    background-color: #d7d9f2;
+}
+
+.flash {
+    background-color: #ffe8d4;
+}
+
+caption {
+    padding: 8px;
+    caption-side: bottom;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(100, 100, 100);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: 0.7rem;
+}
+
+td,
+th {
+    border: 1px solid rgb(100, 100, 100);
+    padding: 10px 10px;
+}
+
+    </style>
+</head>
+<body>
+    <h2>Datalist tag</h2>
+    <label for="ice-cream-choice">Choose a flavor:</label>
+    <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice">
+
+    <datalist id="ice-cream-flavors">
+        <option value="Chocolate">
+        <option value="Coconut">
+        <option value="Mint">
+        <option value="Strawberry">
+        <option value="Vanilla">
+    </datalist>
+    &nbsp;
+    <hr>
+    <h2>Embed Tag</h2>
+    <embed type="video/mp4"
+       src="../Day 2/Videos/puppy.mp4"
+       width="250"
+       height="200">
+       &nbsp;
+       <hr>
+       <h2>Dfn Tag</h2>
+       <p>A <dfn id="def-validator">validator</dfn> is a program that checks for syntax errors in code or documents.</p>
+       &nbsp;
+       <hr>
+       <h2>kbd Tag</h2>
+       <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render an MDN page.</p>
+       &nbsp;
+       <hr>
+       <h2>sub tag</h2>
+       <p>Almost every developer's favorite molecule is
+        C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>, also known as "caffeine."</p>
+        &nbsp;
+        <hr>
+        <h2>Time tag</h2>
+        <p>The Cure will be celebrating their 40th anniversary on <time datetime="2018-07-07">July 7</time> in London's Hyde Park.</p>
+        <p>The concert starts at <time datetime="20:00">20:00</time> and you'll be able to enjoy the band for at least <time datetime="PT2H30M">2h 30m</time>.</p>
+        &nbsp;
+        <hr>
+        <h2>var tag</h2>
+        <p>The volume of a box is <var>l</var> × <var>w</var> × <var>h</var>, where <var>l</var> represents the length, <var>w</var> the width and <var>h</var> the height of the box.</p>
+        &nbsp;
+        <hr>
+        <h2>mark tag</h2>
+        <p>Search results for "salamander":</p>
+       
+       <p>Several species of <mark>salamander</mark> inhabit the temperate rainforest of the Pacific Northwest.</p>
+       
+       <p>Most <mark>salamander</mark>s are nocturnal, and hunt for insects, worms, and other small creatures.</p>
+       &nbsp;
+       <hr>
+       <h2>fieldset and legend tag</h2>
+       <form>
+        <fieldset>
+          <legend>Choose your favorite monster</legend>
+      
+          <input type="radio" id="kraken" name="monster" value="K">
+          <label for="kraken">Kraken</label><br>
+      
+          <input type="radio" id="sasquatch" name="monster" value="S">
+          <label 
+          for="sasquatch">Sasquatch</label><br>
+
+    <input type="radio" id="mothman" name="monster" value="M">
+    <label for="mothman">Mothman</label>
+  </fieldset>
+</form>
+&nbsp;
+<hr>
+<h2>Figure and figcaption tag</h2>
+<figure>
+    <img src="/Day 1/Images/Sunset.jpg"
+         alt="Sunset">
+    <figcaption>A sunset</figcaption>
+</figure>
+&nbsp;
+<hr>
+<h2>ins and del tag</h2>
+<p>“You're late!”</p>
+<del>
+    <p>“I apologize for the delay.”</p>
+</del>
+<ins cite="../howtobeawizard.html" datetime="2018-05">
+    <p>“A wizard is never late …”</p>
+</ins>
+&nbsp;
+<hr>
+<h2>label and meter tag</h2>
+<label for="fuel">Fuel level:</label>
+
+<meter id="fuel"
+       min="0" max="100"
+       low="33" high="66" optimum="80"
+       value="50">
+    at 50/100
+</meter>
+&nbsp;
+<hr>
+<h2>optgroup tag</h2>
+<label for="dino-select">Choose a dinosaur:</label>
+<select id="dino-select">
+    <optgroup label="Theropods">
+        <option>Tyrannosaurus</option>
+        <option>Velociraptor</option>
+        <option>Deinonychus</option>
+    </optgroup>
+    <optgroup label="Sauropods">
+        <option>Diplodocus</option>
+        <option>Saltasaurus</option>
+        <option>Apatosaurus</option>
+    </optgroup>
+</select>
+&nbsp;
+<hr>
+<h2>progress tag</h2>
+
+<label for="file">File progress:</label>
+
+<progress id="file" max="100" value="70"> 70% </progress>
+&nbsp;
+<hr>
+<h2>wbr tag and shy tag</h2>
+<div id="example-paragraphs">
+    <p>Fernstraßenbauprivatfinanzierungsgesetz</p>
+    <p>Fernstraßen<wbr>bau<wbr>privat<wbr>finanzierungs<wbr>gesetz</p>
+    <p>Fernstraßen&shy;bau&shy;privat&shy;finanzierungs&shy;gesetz</p>
+</div>
+&nbsp;
+<hr>
+<h2>caption and colgroup tag</h2>
+
+<table>
+    <caption>Superheros and sidekicks</caption>
+    <colgroup>
+        <col>
+        <col span="2" class="batman">
+        <col span="2" class="flash">
+    </colgroup>
+    <tr>
+        <td> </td>
+        <th scope="col">Batman</th>
+        <th scope="col">Robin</th>
+        <th scope="col">The Flash</th>
+        <th scope="col">Kid Flash</th>
+    </tr>
+    <tr>
+        <th scope="row">Skill</th>
+        <td>Smarts</td>
+        <td>Dex, acrobat</td>
+        <td>Super speed</td>
+        <td>Super speed</td>
+    </tr>
+</table>
+    </body>
+</html>

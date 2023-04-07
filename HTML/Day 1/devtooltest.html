@@ -1,0 +1,45 @@
+<!DOCTYPE html>            <!-- this gives the type of html. It is also known as Parsers. It validates the tags of html-->
+<html lang="en">           <!-- this html tag is root tag and lang is an attribute this means in which language it is written.-->
+<head>                      <!-- this is declaration tag. Anything we write in head doesnt show in browser it should not have info of content. It contain info of browser, etc-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UST Global</title>
+    
+</head>
+<body>
+    <script>
+        console.log('Testing Console DevTools');
+        console.error('....error log');
+        console.warn('....warn log');
+        console.table(
+            [
+            {"name":"John Doe","age":"23"},
+            {"name":"Jane Doe","age":"24"}
+    ]);
+
+    console.group('groupInfo');
+        console.log('Aparna');
+        console.log('Taniya');
+        console.log('Tresa');
+        console.log('Merin');
+        console.log('Selas');
+    console.groupEnd('groupInfo');
+
+    console.log(document);
+    console.info(document.URL);
+    console.dir(document);
+    localStorage.setItem("topic","dev tools after lunch");
+    localStorage.setItem("abc","Alphabets")
+    console.log(localStorage.getItem('topic'));
+    console.log(localStorage.getItem('abc'));
+    document.cookie = 'url=https://secureurl.com';
+    document.cookie = 'url=https://secureurl.com';
+    document.cookie = "Company=https://ust.com";
+    </script>
+    <h1 id="thumbipenn"> Welcome to Dev Tools</h1>
+    <h2>Let's have lunch break!</h2>
+    <img src="../Day 1/Images/Minion.jpg">
+    
+</body>
+</html>
